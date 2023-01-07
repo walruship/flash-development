@@ -1,0 +1,27 @@
+version: "3"
+
+services:
+  nginx:
+    restart: unless-stopped
+    container_name: nginx
+    image: walruship/nginx:1.23
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes: &appvolumes
+      - ./docker/nginx/sites-enabled:/etc/nginx/conf.d
+      - ./src:/var/www:cached
+      - sockdata:/sock
+      - ssldata:/etc/nginx/certs
+    extra_hosts: &appextrahosts
+      - "your-domain.com:172.17.0.1"
+    networks:
+      - network-bridge
+
+volumes:
+  sockdata:
+  ssldata:
+
+networks:
+  network-bridge:
+    driver: bridge
