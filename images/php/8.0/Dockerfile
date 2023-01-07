@@ -1,4 +1,4 @@
-FROM php:7.4-fpm-bullseye
+FROM php:8.0-fpm-bullseye
 MAINTAINER Walruship Co,. Ltd <contact@walruship.com>
 
 ARG APP_ID=1000
@@ -45,7 +45,7 @@ RUN pecl channel-update pecl.php.net && pecl install \
     imagick \
     redis \
     ssh2-1.3.1 \
-    xdebug-2.9.8 \
+    xdebug \
   && pecl clear-cache \
   && rm -rf /tmp/pear
 

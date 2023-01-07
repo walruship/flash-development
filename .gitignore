@@ -74,3 +74,4 @@ Temporary Items
 
 # Directories created by docker
 compose/env/*.env
+compose/src
