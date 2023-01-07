@@ -15,5 +15,6 @@ View Dockerfiles:
 - [walruship/nginx (Docker Hub)](https://hub.docker.com/r/walruship/nginx)
   - 1.23
 - [walruship/nginx (Docker Hub)](https://hub.docker.com/r/walruship/php)
+  - 8.1
   - 8.0
   - 7.4
