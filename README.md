@@ -1,7 +1,7 @@
-<h1 align="center">Docker's environment development</h1>
+<h1 align="center">walruship/flash-development</h1>
 
 <div align="center">
-  <p>Docker's environment development for PHP</p>
+  <p>Docker's environment development</p>
   <a href="https://hub.docker.com/r/walruship/nginx" target="_blank"><img src="https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white&longCache=true" alt="Docker Hub - Nginx" /></a>
   <a href="https://hub.docker.com/r/walruship/php" target="_blank"><img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white&longCache=true" alt="Docker Hub - PHP" /></a>
   <a href="https://hub.docker.com/_/mariadb" target="_blank"><img src="https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white&longCache=true" alt="Docker Hub - MariaDB" /></a>
@@ -10,6 +10,7 @@
 ## Table of contents
 - [Docker Hub](#docker-hub)
 - [Custom CLI Commands](#custom-cli-commands)
+- [Credits](#credits)
 - [License](#license)
 
 ## Docker Hub
@@ -44,6 +45,11 @@ View Dockerfiles:
 - `bin/status`: Check the container status.
 - `bin/stop`: Stop all containers.
 - `bin/xdebug`: Disable or enable Xdebug. Accepts params `disable` (default) or `enable`. Ex. `bin/xdebug enable`
+
+## Credits
+Walruship Co,. Ltd and We are the creator of this repo.
+
+You can follow us on Twitter <a href="https://twitter.com/walruship" target="_blank">@walruship</a>, connect with us on LinkedIn <a href="https://www.linkedin.com/in/walruship" target="_blank">@walruship</a>, read our website at <a href="https://walruship.com" target="_blank">https://walruship.com</a>, or contact us directly at <a href="mailto:contact@walruship.com">contact@walruship.com</a>.
 
 ## License
 [MIT](https://opensource.org/licenses/MIT)
