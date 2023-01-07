@@ -18,6 +18,16 @@ services:
     networks:
       - network-bridge
 
+  php:
+    restart: unless-stopped
+    container_name: php
+    image: walruship/php:7.4
+    volumes: *appvolumes
+    extra_hosts: *appextrahosts
+    env_file: env/php.env
+    networks:
+      - network-bridge
+
 volumes:
   sockdata:
   ssldata:

@@ -71,3 +71,6 @@ Temporary Items
 
 # Directories SSL
 .well-known
+
+# Directories created by docker
+compose/env/*.env
