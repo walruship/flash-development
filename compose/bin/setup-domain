@@ -1,0 +1,12 @@
+#!/bin/bash
+set -o errexit
+
+[ -z "$1" ] && echo "Please specify a domain name (ex. domain.test)" && exit
+
+DOMAIN=$1
+
+echo "Your system password has been requested to add an entry to /etc/hosts..."
+echo "127.0.0.1 ::1 $DOMAIN" | sudo tee -a /etc/hosts
+
+echo "Generating SSL certificate..."
+bin/setup-ssl "$DOMAIN"
