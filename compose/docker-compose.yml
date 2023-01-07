@@ -17,7 +17,7 @@ services:
       - php
       - mariadb
     extra_hosts: &appextrahosts
-      - "your-domain.com:172.17.0.1"
+      - "${EXTERNAL_HOST}:172.17.0.1"
     networks:
       - network-bridge
 
