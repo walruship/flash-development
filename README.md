@@ -10,6 +10,7 @@
 ## Table of contents
 - [Docker Hub](#docker-hub)
 - [Custom CLI Commands](#custom-cli-commands)
+- [License](#license)
 
 ## Docker Hub
 View Dockerfiles:
@@ -43,3 +44,6 @@ View Dockerfiles:
 - `bin/status`: Check the container status.
 - `bin/stop`: Stop all containers.
 - `bin/xdebug`: Disable or enable Xdebug. Accepts params `disable` (default) or `enable`. Ex. `bin/xdebug enable`
+
+## License
+[MIT](https://opensource.org/licenses/MIT)
