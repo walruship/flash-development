@@ -17,14 +17,14 @@ services:
       - php
       - mariadb
     extra_hosts: &appextrahosts
-      - "${EXTERNAL_HOST}:172.17.0.1"
+      - "extra_hosts:172.17.0.1"
     networks:
       - network-bridge
 
   php:
     restart: unless-stopped
     container_name: php
-    image: walruship/php:7.4
+    image: walruship/php:8.0
     volumes: *appvolumes
     extra_hosts: *appextrahosts
     env_file: env/php.env
