@@ -24,7 +24,7 @@ services:
   php:
     restart: unless-stopped
     container_name: php
-    image: walruship/php:8.0
+    image: walruship/php:7.4
     volumes: *appvolumes
     extra_hosts: *appextrahosts
     env_file: env/php.env
