@@ -17,7 +17,7 @@ services:
       - php
       - mariadb
     extra_hosts: &appextrahosts
-      - "extra_hosts:172.17.0.1"
+      - "api.videoroof.dev:172.17.0.1"
     networks:
       - network-bridge
 
